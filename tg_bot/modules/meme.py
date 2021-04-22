@@ -16,9 +16,9 @@ from telegram import MessageEntity
 from telegram.ext import Filters, MessageHandler,  CommandHandler, run_async
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from SaitamaRobot import dispatcher, DRAGONS, DEMONS, LOGGER, SUPPORT_CHAT
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
+from tg_bot import dispatcher, SUDO_USERS, SUPPORT_USERS, LOGGER, SUPPORT_CHAT
+from tg_bot.modules.disable import DisableAbleCommandHandler
+from tg_bot.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
